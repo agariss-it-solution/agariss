@@ -1,0 +1,14 @@
+
+.custom-nav-link:hover {
+  background-color: #f8f9fa; /* Light gray background */
+ color: #B88338
+ 
+}
+.nav-font{
+
+  font-size: 24px;
+
+}
+.sticky-top {
+  z-index: 1030; /* or higher than other elements */
+}

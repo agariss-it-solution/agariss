@@ -1,0 +1,71 @@
+.view-roles-img {
+  max-width: 150px;  /* Make the image smaller */
+  width: 100%;       /* Ensure responsiveness */
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.view-roles-img:hover {
+  transform: scale(1.1);
+}
+
+.btn-outline-primary{
+  background-color: #B88338;
+  color: aliceblue;
+  border: none;
+}
+.btn-outline-primary:hover{
+  background-color:white!important;
+  color: black;
+}
+.sendbtn {
+  background-color: #B88338;    /* Default background */
+  color: aliceblue;             /* Default text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sendbtn:hover {
+  background-color: #FDF3C8;    /* Darker gold/brown on hover */
+  color: white;                 /* Optional: make text brighter on hover */
+  color: black;
+}
+
+.carrier-title{
+  font-size: 40px;
+ color: #555555;
+}
+.carrier-subtitle{
+  font-size: 24px;
+   color: #555555;
+}
+.carrier-heading{
+  font-size: 40px;
+  color: #555555;
+}
+.carrier-subheading{
+  font-size: 24px;
+  color: #555555;
+}
+.perk-text{
+  font-size: 32px;
+  border-radius: 20px
+  
+}
+.carrier-subtitle{
+  font-size: 24px;
+}
+.carrier-form{
+  color: #000000;
+   font-size: 24px;
+  
+}
+.highlight{
+  color: #B88338;
+
+}

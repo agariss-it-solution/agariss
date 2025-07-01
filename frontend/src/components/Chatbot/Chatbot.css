@@ -1,0 +1,60 @@
+.chatbot-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #B88338;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  z-index: 1000;
+}
+
+.chatbot-window .card-body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.badge {
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-width: 85%;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chatbot-window {
+    width: 90vw;
+    right: 5vw;
+    bottom: 100px;
+  }
+
+  .chatbot-toggle-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-window {
+    width: 70vw !important;
+    bottom: 90px !important;
+  }
+
+  .chatbot-toggle-btn {
+    bottom: 10px !important;
+    right: 10px !important;
+    padding: 7px 10px !important;
+  }
+}

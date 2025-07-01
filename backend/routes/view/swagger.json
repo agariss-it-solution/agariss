@@ -1,0 +1,778 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "agariss It solution",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://agariss-it-solution.onrender.com"
+    }
+  ],
+  "tags": [
+    {
+      "name": "admin panel"
+    },
+    {
+      "name": "admin panel > blog"
+    },
+    {
+      "name": "admin panel > opening"
+    },
+    {
+      "name": "admin panel > opening apply data"
+    },
+    {
+      "name": "admin panel > work"
+    },
+    {
+      "name": "admin panel > contactus"
+    },
+    {
+      "name": "admin panel > register/login"
+    },
+    {
+      "name": "userpenal"
+    }
+  ],
+  "paths": {
+    "/001/v1/blogdetails": {
+      "post": {
+        "tags": [
+          "admin panel > blog"
+        ],
+        "summary": "blogdetails",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "blog_title": {
+                    "type": "string",
+                    "example": "moblie App"
+                  },
+                  "date": {
+                    "type": "string",
+                    "example": "December 27 2024"
+                  },
+                  "blog_name": {
+                    "type": "string",
+                    "example": "A customer booking app"
+                  },
+                  "blog_images": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "banner_images": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "blog_image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "projectBy": {
+                    "type": "string",
+                    "example": "Your IT Company Name"
+                  },
+                  "client": {
+                    "type": "string",
+                    "example": "Private Local Business Consortium (Confidential)"
+                  },
+                  "industry": {
+                    "type": "string",
+                    "example": "Local Service Aggregation"
+                  },
+                  "serviceType": {
+                    "type": "string",
+                    "example": "Mobile App + Admin Panel Development"
+                  },
+                  "duration": {
+                    "type": "string",
+                    "example": "\t4.5 Months"
+                  },
+                  "clientOverview": {
+                    "type": "string",
+                    "example": "\tThe client is a group of small local businesses (electricians, cleaners, tutors, etc.) who wanted to digitize their service bookings. Their goal was to reduce manual coordination and allow customers to book appointments online — all through one app."
+                  },
+                  "objectives": {
+                    "type": "string",
+                    "example": "[\"Build a mobile application for customer bookings\", \"Create a backend dashboard for admin and service provider management\", \"Implement a secure payment and notification system\", \"Ensure scalability and ease of use for users with low digital literacy\"]\n"
+                  },
+                  "features": {
+                    "type": "string",
+                    "example": "{\n  \"customerApp\": [\n    \"Simple onboarding with phone OTP\",\n    \"Browse services with filters (location, availability)\",\n    \"Real-time booking and time slot selection\",\n    \"Wallet & UPI payment support\",\n    \"In-app notifications & booking history\",\n    \"Review & rate service after completion\"\n  ],\n  \"serviceProviderPortal\": [\n    \"Login and manage availability\",\n    \"Accept or decline incoming bookings\",\n    \"View service history and earnings\"\n  ],\n  \"adminPanel\": [\n    \"Add/manage services and provider accounts\",\n    \"Monitor bookings and customer feedback\",\n    \"Resolve disputes or refund requests\",\n    \"Export service logs and earnings reports\"\n  ]\n}\n"
+                  },
+                  "testingProcess": {
+                    "type": "string",
+                    "example": "[\"Functionality tests for all flows (booking, payment, login)\", \"Compatibility checks on Android & iOS devices\", \"Performance test: Simulated 10,000 users\"]\n"
+                  },
+                  "deployment": {
+                    "type": "string",
+                    "example": "[\"Backend deployed via Docker on AWS\", \"Android app live on Play Store\", \"iOS app deployed via App Store Connect\"]\n"
+                  },
+                  "clientFeedback": {
+                    "type": "string",
+                    "example": "Your team made the entire process easy. From planning to launch, we felt confident in your approach and communication. The app is already helping us grow faster than expected.\n"
+                  },
+                  "keyTakeaways": {
+                    "type": "string",
+                    "example": "[\"Using Flutter reduced development cost by nearly 45%\", \"Admin dashboard simplified back-office tasks\", \"Focus on UX led to high early user engagement and retention\", \"Modular backend allows easy future integration (e.g., GPS tracking, promo codes)\"]\n"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/blogdetails/684baf1fd3d25fd68ce4cdbd": {
+      "put": {
+        "tags": [
+          "admin panel > blog"
+        ],
+        "summary": "blogdetails update",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "banner_images": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "blog_image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "project": {
+                    "type": "string",
+                    "example": " {\n \n    \"client\": \"Private Local Business Consortium (Confidential.\",\n    \"industry\": \"Local Service Aggregation\",\n    \"service\": \"Mobile App + Admin Panel Development\",\n    \"duration\": \" 4.5 Months\"\n  }"
+                  },
+                  "clientOverview": {
+                    "type": "string",
+                    "example": "The client is a group of small local businesses (electricians, cleaners, tutors, etc.) who wanted to digitize their service bookings. Their goal was to reduce manual coordination and allow customers to book appointments online — all through one app.\n"
+                  },
+                  "objectives": {
+                    "type": "string",
+                    "example": "[\"Build a mobile application for customer bookings\",\"Create a backend dashboard for admin and service provider management\",\"Implement a secure payment and notification system\",\"Ensure scalability and ease of use for users with low digital literacy\"]"
+                  },
+                  "feature": {
+                    "type": "string",
+                    "example": "[\"Login\",\"Notifications\",\"Service listing\"]"
+                  },
+                  "blog_schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/blogdetaildelete/6842ba171431648a07ebb6fe": {
+      "delete": {
+        "tags": [
+          "admin panel > blog"
+        ],
+        "summary": "blogdetailsdelete",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/blog": {
+      "post": {
+        "tags": [
+          "admin panel > blog"
+        ],
+        "summary": "blogs",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "blog_image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "blog_title": {
+                    "type": "string",
+                    "example": "Redesigning"
+                  },
+                  "date": {
+                    "type": "string",
+                    "example": "may 27 2024"
+                  },
+                  "blog_name": {
+                    "type": "string",
+                    "example": "Redesigning the website for  \"cafe Aroma\""
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/blogupdate/684be5f7e33b5027c3d99622": {
+      "put": {
+        "tags": [
+          "admin panel > blog"
+        ],
+        "summary": "blogupdate",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "blog_images": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "blog_title": {
+                    "type": "string",
+                    "example": "Redesigning"
+                  },
+                  "date": {
+                    "type": "string",
+                    "example": "may 27 2024"
+                  },
+                  "blog_name": {
+                    "type": "string",
+                    "example": "Redesigning the website for  \"cafe Aroma\""
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/contactdelete/68429bc98d56cd511c9f6909": {
+      "delete": {
+        "tags": [
+          "admin panel > blog"
+        ],
+        "summary": "blogdelete",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/opening": {
+      "post": {
+        "tags": [
+          "admin panel > opening"
+        ],
+        "summary": "opening upload",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "title": "Digital Marketing intern",
+                  "jobtype": "internship ,on premise,fresher or final year student",
+                  "requirement": "Basic knowledge of seo ,social media,Google Ads,and interest in marketing."
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/updateopening/68415a448117c25e6f1876a2": {
+      "put": {
+        "tags": [
+          "admin panel > opening"
+        ],
+        "summary": "opening upload Copy",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "title": "Nodejs intern",
+                  "jobtype": "internship ,on premise,fresher or final year student",
+                  "requirement": "Basic understanding of Dart & Flutter ,Ui design sense ,and willingness to learn"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/openingdelete/68415c1eb5a016c776450dfd": {
+      "delete": {
+        "tags": [
+          "admin panel > opening"
+        ],
+        "summary": "opening upload delete",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/applydata": {
+      "get": {
+        "tags": [
+          "admin panel > opening apply data"
+        ],
+        "summary": "opening apply data get",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/applydatadelete/68427d37446e725918586513": {
+      "delete": {
+        "tags": [
+          "admin panel > opening apply data"
+        ],
+        "summary": "opening apply data delete",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/work": {
+      "post": {
+        "tags": [
+          "admin panel > work"
+        ],
+        "summary": "work",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "Event Managment system"
+                  },
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "An Event Management System is a software application designed to plan, organize, and manage events efficiently and professionally. It streamlines the entire lifecycle of an event — from initial planning to execution and post-event evaluation."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/workupdate/6842d1ce6e47e34f5bdb71b7": {
+      "put": {
+        "tags": [
+          "admin panel > work"
+        ],
+        "summary": "update",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "Event Managment system"
+                  },
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "An Event Management System is a software application designed to plan, organize, and manage events efficiently and professionally. It streamlines the entire lifecycle of an event — from initial planning to execution and post-event evaluation."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/workdelete/684282a3227bc1bb2d85743c": {
+      "delete": {
+        "tags": [
+          "admin panel > work"
+        ],
+        "summary": "deleteworkdata",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/contactdata": {
+      "get": {
+        "tags": [
+          "admin panel > contactus"
+        ],
+        "summary": "contactus data get",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/contactdelete/6842c5f7bcd0292db847ad29": {
+      "delete": {
+        "tags": [
+          "admin panel > contactus"
+        ],
+        "summary": "deletecontact",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/register": {
+      "post": {
+        "tags": [
+          "admin panel > register/login"
+        ],
+        "summary": "register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "abc12345@gmail.com",
+                  "password": "453678"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/login": {
+      "post": {
+        "tags": [
+          "admin panel > register/login"
+        ],
+        "summary": "login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "abc12345@gmail.com",
+                  "password": "453678"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/contact": {
+      "post": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "contactus",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "firstName": "ajay",
+                  "lastName": "rana",
+                  "email": "ajayr6741@gmail.com",
+                  "moblie": 9876543210,
+                  "description": "Looking for business inquiry."
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/apply": {
+      "post": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "opening apply",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "fullName": {
+                    "type": "string",
+                    "example": "kukna jigar"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "jigar@example.com"
+                  },
+                  "contact_number": {
+                    "type": "integer",
+                    "example": "9876543210"
+                  },
+                  "resume": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "position": {
+                    "type": "string",
+                    "example": "node js Intern"
+                  },
+                  "experience": {
+                    "type": "string",
+                    "example": "Fresher"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/blogdata/684be2302322fdee77cb1200": {
+      "get": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "blogsdetails get",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/001/v1/blogall": {
+      "get": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "blog_card",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/workdata": {
+      "get": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "workdata get",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/openingdata": {
+      "get": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "opening upload data get",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/chat": {
+      "post": {
+        "tags": [
+          "userpenal"
+        ],
+        "summary": "chat",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "message": "how do i contact support"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

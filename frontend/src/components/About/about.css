@@ -1,0 +1,411 @@
+.about-subtitle {
+  font-size: 3.5rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  color: #B88338;
+}
+
+.about-subtitle:hover {
+  transform: rotate(-3deg) scale(1.05);
+  color: #B88338;
+}
+
+
+.about-heading {
+  color: #000000;
+  font-size: 24px;
+
+}
+
+.about-title {
+  font-size: 64px;
+  color: #000000;
+}
+
+.about-text {
+  font-size: 24px;
+}
+
+.highlight-yellow {
+  color: #B88338;
+}
+
+.goal-heading {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.goal-subheading {
+  font-size: 64px;
+  color: #202020;
+}
+
+.about-name {
+  color: #ffffff;
+}
+
+.about-name:hover {
+  color: #B88338;
+}
+
+.goal-subtitle {
+  font-size: 24px;
+  color: #000000;
+}
+
+.text-ligth {
+  color: #ffffff;
+}
+
+.gol-text {
+  font-size: 24px;
+  color: #000000;
+}
+
+.zoom-hover {
+  transition: transform 0.4s ease-in-out;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.08);
+  /* Increase or decrease scale as needed */
+}
+
+
+
+.about-page {
+  font-size: 100%;
+  /* Adjust the base font size */
+}
+
+.img-fluid {
+  max-width: 100%;
+  /* Ensure images are responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/* Adjust heading sizes as necessary */
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-heading {
+  position: absolute;
+  font-weight: 700;
+  color: white;
+  top: 6%;
+  left: 5%;
+  max-width: 90%;
+  line-height: 1.3;
+  z-index: 2;
+  font-size: clamp(1.6rem, 5vw, 2.8rem);
+  white-space: normal;
+  word-break: break-word;
+}
+
+.hero-breadcrumb {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  background-color: #F0E4CD;
+  color: #B88338;
+  border-radius: 30px;
+  /* padding: 10px 20px; */
+  font-weight: 500;
+  font-size: clamp(0.85rem, 2.5vw, 1.25rem);
+  z-index: 2;
+  max-width: 90%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* === MEDIA QUERIES === */
+
+/* Phones (up to 576px) */
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 1.2rem;
+    top: 8%;
+  }
+
+  .hero-breadcrumb {
+    font-size: 0.50rem;
+    top: 40%;
+  }
+}
+
+/* Tablets (577px–991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .hero-heading {
+    font-size: 2.5rem;
+    top: 7%;
+  }
+
+  .hero-breadcrumb {
+    font-size: 1rem;
+    top: 18%;
+  }
+}
+
+/* Large Screens (≥992px) */
+@media (min-width: 992px) {
+  .hero-heading {
+    font-size: 4.5rem;
+    top: 6%;
+  }
+
+  .hero-breadcrumb {
+    font-size: 1.56rem;
+    top: 22%;
+  }
+}
+
+.about-service {
+  background-color: "#555555" !important
+}
+
+.about-single-card {
+  width: 598;
+  height: 1318;
+  max-width: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.about-vertical-line {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  border-left: 2px dotted #b88338;
+  z-index: 0;
+}
+
+.about-dot {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+
+/* Optional: spacing fix for last item */
+.timeline-step-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-title {
+  font-size: 27px;
+}
+
+.deceription-color {
+  color: #877563;
+}
+
+.timeline-single-card {
+  width: 598;
+  height: 1318;
+  max-width: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.icon-left {
+  width: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.startup-glow {
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  padding: 8px;
+  background-color: #1a1a1a;
+  /* matches blackboard style */
+  box-shadow: 0 0 0 transparent;
+}
+
+.rocket-hover-wrapper {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  border-radius: 10%;
+
+}
+
+.rocket-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.rocket-image.filtered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(1.2) sepia(1) hue-rotate(180deg) saturate(5);
+  /* transf orm: scale(1.05); */
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.rocket-hover-wrapper:hover .filtered {
+  opacity: 1;
+  height: 100%;
+  border-radius: 10%;
+  transform: scale(1.01);
+
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #b8860b;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-line {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #b8860b;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timeline-animate-left {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.timeline-animate-right {
+  animation: slideInRight 0.8s ease forwards;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.about-image {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Image styling with spacing */
+.about-image img {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* ✅ Add margin here */
+  margin-bottom: 20px;
+  /* space between the two images */
+}
+
+/* Optional animation */
+.top-img {
+  margin: 10px 10px 10px 125px;
+  animation-name: swipeRightToLeft;
+}
+
+.bottom-img {
+  margin: -83px 10px 10px -26px;
+
+  animation-name: swipeLeftToRight;
+  animation-delay: 0.3s;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-image {
+    max-width: 65%;
+  }
+
+  /* Optional animation */
+  .top-img {
+    margin: 0px 0px 0px 35px;
+    animation-name: swipeRightToLeft;
+  }
+
+  .bottom-img {
+    animation-name: swipeLeftToRight;
+    animation-delay: 0.3s;
+    margin: -50PX 0PX 0PX -30PX
+  }
+}
+
+/* Animations */
+@keyframes swipeRightToLeft {
+  from {
+    /* opacity: 0; */
+    transform: translateX(100px);
+  }
+
+  to {
+    /* opacity: 1; */
+    transform: translateX(0);
+  }
+}
+
+@keyframes swipeLeftToRight {
+  from {
+    /* opacity: 0; */
+    transform: translateX(-100px);
+
+  }
+
+  to {
+    /* opacity: 1; */
+    transform: translateX(0);
+  }
+}
+
+.about-image:hover .top-img {
+  animation: swipeLeftToRight 0.6s ease forwards;
+}
+
+.about-image:hover .bottom-img {
+  animation: swipeRightToLeft 0.6s ease forwards;
+}

@@ -1,0 +1,17 @@
+.social-icon-hover:hover {
+  color: #B88338 !important;
+  transition: color 0.3s ease;
+}
+.footer-color{
+   color: #555555;
+}
+.service-link {
+  text-decoration: none;
+   color: #555555;
+  /* Bootstrap text-secondary color */
+  
+}
+
+.service-link:hover {
+  color: #B88338;
+}

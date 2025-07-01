@@ -1,0 +1,17 @@
+.title{
+     font-size: 20px;
+       color: #B88338;
+}
+.sub-title{
+     font-size: 36px;
+        color:#000000;
+}
+.text-color{
+  color: #B88338 !important;
+}
+.fs-7{
+     font-size: 12px;
+}
+.hover-text:hover{
+color: #B88338;
+}

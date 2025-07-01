@@ -1,0 +1,174 @@
+.highlight {
+  color: #B88338;
+}
+
+
+
+
+.option-swiper {
+  height: 480px;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.option-slide {
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.img-hover-effect {
+  transition: transform 0.4s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.start-project-link {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #b88338;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.start-project-link:hover {
+  transform: scale(1.05);
+}
+
+.subtext {
+  color: #555555;
+  transition: color 0.3s;
+  /* Smooth transition for color change */
+}
+
+.subtext:hover {
+  color: #B88338;
+  /* Color on hover */
+}
+
+.subtext.active {
+  color: #B88338;
+  /* Color on hover */
+}
+
+.web-text {
+  color: #555555;
+  font-size: 20px;
+}
+
+.web-title {
+  color: #555555;
+  font-size: 40px;
+}
+
+.option-title {
+  color: #555555;
+  font-size: 26px;
+}
+
+.option-text {
+  color: #555555;
+  font-size: 19px;
+}
+
+.offer-heading {
+  color: #555555;
+  font-size: 40px;
+}
+
+.service-title {
+  font-size: 32px;
+  color: #555555;
+}
+
+.service-desccription {
+  font-size: 24px;
+  color: #555555;
+}
+
+.division-header {
+  font-size: 40px;
+  color: #555555;
+}
+
+.division-question {
+  font-size: 24px;
+  color: #555555;
+}
+
+.faq-answer {
+  font-size: 24px;
+  color: #000000;
+  background-color: #D9D9D9;
+  border-radius: 30px;
+
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coustum-app {
+  color: #555555;
+  font-size: 40px;
+}
+
+.coustum-tite {
+  color: #555555;
+  font-size: 24px;
+}
+
+
+
+.custom-swiper-height {
+  max-height: 400px;
+  /* Default for desktop/tablet */
+}
+
+@media (max-width: 576px) {
+  .custom-swiper-height {
+    height: 300px !important;
+    max-height: 200px !important;
+    /* Mobile height override */
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .custom-swiper-height {
+    height: 300px !important;
+    max-height: 200px !important;
+    /* Mobile height override */
+  }
+}
+
+.center-feature-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+
+  /* Desktop */
+  .center-feature-img {
+    max-width: 130% !important;
+  }
+}

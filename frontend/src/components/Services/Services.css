@@ -1,0 +1,136 @@
+
+.bg-color {
+  background-color: #F2F0EE;
+}
+
+.highlight-yellow {
+  color: #B88338;
+  width: 100%
+}
+
+.custom-margin {
+  margin-bottom: 20px;
+  /* Adjust this value as needed */
+}
+
+.footer {
+  background-color: #D4D0C2;
+  ;
+}
+
+.font-size-heading {
+  font-size: 56px;
+  color: #555555
+}
+
+.font-size-subheading {
+  font-size: 24px;
+  color: #555555
+}
+
+.text-heading {
+  font-size: 40px;
+  color: #555555
+}
+
+.bootm-heading {
+  font-size: 32px;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  /* Scale up the card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+.service-text {
+  /* font-size: 20px; */
+  color: #555555;
+}
+
+.service-heading {
+  /* font-size: 32px; */
+  color: #000000;
+}
+
+.srvices-button {
+  font-size: 24px;
+  color: #B88338;
+  background-color: #F0E4CD;
+  border: none;
+  border-radius: 30px;
+  height: 45px;
+  width: 119px;
+  padding: 0 16px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Tablet and smaller: reduce size slightly */
+@media (max-width: 768px) {
+  .srvices-button {
+    font-size: 20px !important;
+    height: 40px !important;
+    width: 110px !important;
+  }
+}
+
+/* Mobile: even smaller */
+@media (max-width: 576px) {
+  .srvices-button {
+    font-size: 15px !important;
+    height: 30px  !important;
+    width: 70px !important;
+  }
+}
+
+.know-more-btn {
+  color: #000;
+  /* default color */
+  text-decoration: none;
+}
+
+.know-more-btn:hover {
+  color: #B88338 !important;
+  /* color on hover */
+}
+@media (min-width: 992px) {
+  .process-section .row > div:not(:nth-child(3n)) {
+    border-right: 1px solid #ccc;
+  }
+
+  .process-section .row > div {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .process-section .row > div {
+    border-right: 2px solid #ccc;
+  }
+
+  /* Remove right border on the last column in each row (3rd, 6th, etc.) */
+  .process-section .row > div:nth-child(3n) {
+    border-right: none;
+  }
+
+  /* Ensure no horizontal lines */
+  .process-section .row > div {
+    border-bottom: none;
+  }
+}
+
+.color-name{
+  color: #555555;
+}

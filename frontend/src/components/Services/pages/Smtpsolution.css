@@ -1,0 +1,40 @@
+.highlight {
+  color: #B88338;
+}
+.faq-division {
+  background: transparent !important;
+}
+
+.faq-question {
+  font-size: 1.5rem; /* approx fs-4 */
+}
+
+.faq-answer {
+  font-size: 1.25rem; /* approx fs-5 */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.option-swiper {
+  height: 480px;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.option-slide {
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+

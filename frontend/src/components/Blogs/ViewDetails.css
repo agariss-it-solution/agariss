@@ -1,0 +1,100 @@
+
+.blogsimg1 {
+  width: 48%;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+.blogsimg2 {
+  width: 48%;
+  border-radius: 10px;
+}
+/* src/components/ProjectDetails.css */
+
+/* Container for the whole project view */
+.project-overview {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Header images side by side */
+.project-overview .project-images {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project-overview .project-images .blogsimg {
+  flex: 1;
+  max-width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #0003;
+  object-fit: cover;
+}
+
+/* Inner wrapper for content */
+.page-wrapper {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #0001;
+}
+
+.project-details p {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.project-details h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ff6f61;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.project-details h4 {
+  margin-bottom: 10px;
+  color: #ff6f61;
+  font-size: 1.2rem;
+}
+
+.project-details ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.project-details ul li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+blockquote {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff1ef;
+  border-left: 5px solid #ff6f61;
+  font-style: italic;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .project-overview .project-images {
+    flex-direction: column;
+  }
+  
+  .project-overview .project-images .blogsimg {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.details{
+  font-size: 40px;
+  color: #000000;
+}
+.detail-title{
+  font-size: 48px;
+}
