@@ -6,7 +6,7 @@ const applyToOpening = async (req, res) => {
   try {
     const { fullName, email, contact_number, position, experience } = req.body;
     const resume = req.file?.filename;
-    const resumeUrl = `http://localhost:3001/uploads/${resume}`;
+    const resumeUrl = `http://31.97.63.245:3001/uploads/${resume}`;
 
     // Field validation
     if (
