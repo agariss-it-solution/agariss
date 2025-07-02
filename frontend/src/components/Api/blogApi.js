@@ -1,7 +1,7 @@
 // blogApi.js
 export const fetchAllBlogs = async () => {
   try {
-    const response = await fetch('http://localhost:3001/v1/blogall');
+    const response = await fetch('http://31.97.63.245:3001/v1/blogall');
     // console.log("res",response);
     
     const data = await response.json();
