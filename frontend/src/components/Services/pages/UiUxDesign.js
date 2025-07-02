@@ -356,67 +356,68 @@ function UiUxDesign() {
             <img src={imgLeft} alt="Service Visual" className="img-fluid w-100" />
           </div>
           <div className=" col-lg-6 col-12 " data-aos="fade-left">
-            <Swiper
-              direction={direction}
-              navigation={true}
-              mousewheel={{ releaseOnEdges: true }}
-              spaceBetween={20}
-              modules={[Navigation, Scrollbar, Mousewheel]}
-              style={{ marginLeft: "-9px" }}
-              className="feature-swiper custom-swiper-height"
-              breakpoints={{
-                0: {
-                  slidesPerView: 1, // 1 slide on mobile
-                },
-                768: {
-                  slidesPerView: 2, // 2 slides on tablets
-                },
-                992: {
-                  slidesPerView: 3, // 3 slides on desktops
-                },
-              }}
-            >
-              {swiperOptions.map((feature, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="p-3 custom-swiper-height d-flex align-items-center gap-2 text-start rounded"
-                    style={{
-                      background: "#FFFAFA",
-                      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                    }}
-                  >
-                    {/* Image with responsive size */}
-                    <img
-                      src={feature.icon}
-                      alt="icon"
-                      className="img-fluid d-block d-sm-inline"
-                      style={{
-                        width: "80px", // You can adjust this size as needed
-                      }}
-                    />
+           <Swiper
+                            direction={direction}
+                            navigation={true}
+                            mousewheel={{ releaseOnEdges: true }}
+                            spaceBetween={20}
+                            modules={[Navigation, Scrollbar, Mousewheel]}
+                            className="feature-swiper  custom-swiper-height"
+                            style={{ marginLeft: "-11px" }}
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 1, // 1 slide on mobile
+                                },
+                                768: {
+                                    slidesPerView: 2, // 2 slides on tablets
+                                },
+                                992: {
+                                    slidesPerView: 3, // 3 slides on desktops
+                                },
+                            }}
+                        >
+                            {swiperOptions.map((feature, index) => (
+                                <SwiperSlide key={index}>
+                                    <div
+                                        className="p-3 p-lg-3 custom-swiper-height d-flex align-items-center  text-start rounded"
+                                        style={{
+                                            background: "#FFFAFA",
+                                            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
 
-                    {/* Text content with responsive classes */}
-                    <div className="ms-2">
-                      <h6 className="mb-1 fw-semibold fs-6 d-none d-sm-block">
-                        {feature.title}
-                      </h6>
-                      <h6 className="mb-1 fw-semibold fs-6 d-block d-sm-none">
-                        {/* Smaller heading on mobile */}
-                        <small>{feature.title}</small>
-                      </h6>
+                                        }}
+                                    >
+                                        {/* Image with responsive size */}
+                                        <img
+                                            src={feature.icon}
+                                            alt="icon"
+                                            className="img-fluid d-block d-sm-inline"
+                                            style={{
+                                                width: "100px", // You can adjust this size as needed
+                                            }}
+                                        />
 
-                      <p className="mb-0 swiper-color fs-6 d-none d-sm-block">
-                        {feature.description}
-                      </p>
-                      <p className="mb-0 swiper-color fs-6 d-block d-sm-none">
-                        {/* Smaller text on mobile */}
-                        <small>{feature.description}</small>
-                      </p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                                        {/* Text content with responsive classes */}
+                                        <div className="ms-2">
+                                            <h6 className="mb-1 fw-semibold fs-5 d-none d-sm-block">
+                                                {feature.title}
+                                            </h6>
+                                            <h6 className="mb-1 fw-semibold fs-5 d-block d-sm-none">
+                                                {/* Smaller heading on mobile */}
+                                                <small>{feature.title}</small>
+                                            </h6>
+
+                                            <p className="mb-0 swiper-color d-none d-sm-block">
+                                                {feature.description}
+                                            </p>
+                                            <p className="mb-0 swiper-color  fs-6 d-block d-sm-none">
+                                                {/* Smaller text on mobile */}
+                                                <small>{feature.description}</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
           </div>
 
         </div>
