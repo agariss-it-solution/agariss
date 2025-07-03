@@ -7,7 +7,8 @@ const Chatbot = () => {
     const [open, setOpen] = useState(false);
 
     const chatEndRef = useRef(null);
-
+//
+    //
     // Auto-scroll to bottom when new message arrives
     useEffect(() => {
         if (chatEndRef.current) {
