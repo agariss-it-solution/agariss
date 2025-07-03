@@ -356,7 +356,7 @@ function UiUxDesign() {
             <img src={imgLeft} alt="Service Visual" className="img-fluid w-100" />
           </div>
           <div className=" col-lg-6 col-12 " data-aos="fade-left">
-           <Swiper
+         <Swiper
                             direction={direction}
                             navigation={true}
                             mousewheel={{ releaseOnEdges: true }}
