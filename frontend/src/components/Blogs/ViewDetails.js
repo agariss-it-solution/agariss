@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { fetchProjectData } from "../Api/ViewDetails";
 import { useParams } from "react-router-dom";
@@ -51,7 +52,7 @@ function ViewDetails() {
 
       {/* Blog Image */}
       <div className="container px-3 px-lg-5  my-5 fs-6">
-        <div className="bg-white rounded  shadow-sm p-4">
+        <div className="bg-white rounded  shadow-sm p-lg-4 py-3">
 
           {/* Centered Blog Image */}
           <div className="text-center mb-4">
@@ -64,9 +65,10 @@ function ViewDetails() {
             />
           </div>
 
-          <div className="container">
+          <div className="container ">
+            <div className="mb-4 fw-medium  fs-5 fs-lg-2">{project.title}</div>
             <div
-              className="blog-html-content fs-7  fs-lg-3 "
+              className="blog-html-content fs-7 fs-lg-3 "
               dangerouslySetInnerHTML={{
                 __html: project.blog_details.replace(/^"|"$/g, ""), // clean outer quotes
               }}

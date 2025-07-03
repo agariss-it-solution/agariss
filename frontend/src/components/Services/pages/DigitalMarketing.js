@@ -617,7 +617,7 @@ function DigitalMarketing() {
                                                      cursor: "pointer",
                                                      borderRadius: "15px",
                                                      backgroundColor: "#fff",
-                                                     boxShadow: "0 2px 6px rgba(0, 0, 0, 0.05)",
+                                                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
                                                      overflow: "hidden",
                                                      transition: "all 0.3s ease",
                                                  }}
@@ -636,6 +636,7 @@ function DigitalMarketing() {
                                                          backgroundColor: openQuestion === index ? "#D9D9D9" : "transparent",
                                                          padding: openQuestion === index ? "12px 20px 16px" : "0 20px",
                                                          fontSize: "15px",
+                                                          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
                                                          transition: "all 0.3s ease",
                                                      }}
                                                  >

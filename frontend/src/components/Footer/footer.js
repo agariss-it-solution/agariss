@@ -8,10 +8,8 @@ import logo from "../Images/logo.png";
 import {
     FaEnvelope,
     FaPhone,
-  FaMapMarkerAlt,
-    FaTwitter,
+    FaMapMarkerAlt,
     FaInstagram,
-    FaLinkedin,
     FaFacebook,
     FaWhatsapp,
 } from "react-icons/fa";
@@ -25,7 +23,7 @@ function Footer() {
                 <div className="row g-4">
                     {/* Company Info */}
                     <div className="col-lg-3 col-md-6 col-12 footer-color text-md-start">
-                        <img src={logo} alt="Company Logo" className="company-logo  text-start mb-3 " style={{height:"120px", width:"250px"}}/>
+                        <img src={logo} alt="Company Logo" className="company-logo  text-start mb-3 " style={{ height: "120px", width: "250px" }} />
                         <p className="lh-lg fs-6 footer-color">
                             Agariss IT solutions designed to elevate your business and drive exponential growth.
                         </p>
@@ -52,7 +50,7 @@ function Footer() {
                     <div className="col-lg-3 col-md-6 col-12">
                         <h5>Resources</h5>
                         <ul className="list-unstyled lh-lg fs-6 ">
-                           <li><a href="/blogs" className="service-link ">Blog</a></li>
+                            <li><a href="/blogs" className="service-link ">Blog</a></li>
                         </ul>
                     </div>
 
@@ -60,8 +58,8 @@ function Footer() {
                     <div className="col-lg-3 col-md-6 col-12">
                         <h5>Company</h5>
                         <ul className="list-unstyled lh-lg fs-6 footer-color">
-                             <li><a href="/about" className="service-link ">About</a></li>
-                           
+                            <li><a href="/about" className="service-link ">About</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -71,16 +69,16 @@ function Footer() {
 
                     {/* Address */}
                     <div className="col-lg-4 col-md-6 col-12 d-flex align-items-start gap-3">
-                      <a
-                           href="https://maps.app.goo.gl/PaGb6AAAjStPPpuaA"
+                        <a
+                            href="https://maps.app.goo.gl/PaGb6AAAjStPPpuaA"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <FaMapMarkerAlt className=" fw-semibold icon-info  social-icon-hover"
-                          style={{ width: "24px", height: "24px", marginTop: "4px" }}
-                           />
+                                style={{ width: "32px", height: "32px", marginTop: "4px" }}
+                            />
                         </a>
-                          {/* <FaMapMarkerAlt className=" fw-semibold icon-info  social-icon-hover"
+                        {/* <FaMapMarkerAlt className=" fw-semibold icon-info  social-icon-hover"
                           style={{ width: "24px", height: "24px", marginTop: "4px" }}
                            /> */}
                         <div>
@@ -100,10 +98,10 @@ function Footer() {
                             style={{ textDecoration: "none", color: "inherit" }}
                             className="d-flex align-items-start gap-3"
                         >
-                           
+
                             <FaPhone className=" fw-semibold  icon-info social-icon-hover"
-                            style={{ width: "24px", height: "24px", marginTop: "4px" }}
-                             />
+                                style={{ width: "32px", height: "32px", marginTop: "4px" }}
+                            />
                             <div>
                                 <h5 className="mb-1">Contact Us</h5>
                                 <p className="lh-lg fs-6 footer-color mb-0">+91 9925925113</p>
@@ -117,10 +115,10 @@ function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                           
-                              <FaEnvelope className=" fw-semibold icon-info social-icon-hover"
-                              style={{ width: "24px", height: "24px", marginTop: "4px" }}
-                               />
+
+                            <FaEnvelope className=" fw-semibold icon-info social-icon-hover"
+                                style={{ width: "32px", height: "32px", marginTop: "4px" }}
+                            />
                         </a>
                         <div>
                             <h5 className="mb-1">Email Us</h5>
@@ -133,11 +131,11 @@ function Footer() {
                         <h5>Connect with us</h5>
                         <ul className="list-inline mt-2">
                             {[
-                                { icon: <FaInstagram    style={{ width: "40px", height: "40px", marginTop: "4px" }}  />, link: "https://www.instagram.com/agariss_it001?igsh=MWYwcno4OWgwZmlubA=="  },
+                                { icon: <FaInstagram className="social-icon-hover" style={{ width: "40px", height: "40px", marginTop: "4px" }} />, link: "https://www.instagram.com/agariss_it001?igsh=MWYwcno4OWgwZmlubA==" },
                                 // { icon: <FaLinkedin   style={{ width: "24px", height: "24px", marginTop: "4px" }}/>, link: "https://www.linkedin.com" },
-                                { icon: <FaFacebook   style={{ width: "40px", height: "40px", marginTop: "4px" }} />, link: "https://www.facebook.com/profile.php?id=61577234442740" },
-                                { icon: <FaWhatsapp    style={{ width: "40px", height: "40px", marginTop: "4px" }} />, link: "https://api.whatsapp.com/send?phone=9925925113" },
-                               
+                                { icon: <FaFacebook className="social-icon-hover" style={{ width: "40px", height: "40px", marginTop: "4px" }} />, link: "https://www.facebook.com/profile.php?id=61577234442740" },
+                                { icon: <FaWhatsapp className="social-icon-hover" style={{ width: "40px", height: "40px", marginTop: "4px" }} />, link: "https://api.whatsapp.com/send?phone=9925925113" },
+
                             ].map((item, i) => (
                                 <li className="list-inline-item me-2" key={i}>
                                     <a

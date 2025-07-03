@@ -349,8 +349,6 @@ function WebDevelopment() {
                                 Start Your Project
                             </Link>
                         </div>
-
-
                     </div>
 
                     {/* Image Section */}
@@ -437,12 +435,7 @@ function WebDevelopment() {
                             ))}
                         </Swiper>
                     </div>
-
-
-
                 </div>
-
-
                 <div className="tools-section bg-color">
                     <h2 className="offer-heading fw-medium text-center responsive-heading  py-4 mt-4 mb-4" data-aos="fade-right">
                         Technologies We Use
@@ -527,10 +520,7 @@ function WebDevelopment() {
                         ))}
                     </Swiper>
                 </div>
-
-
                 <div className="faq-cta text-center mt-5">
-
                     <Link
                         to="/contact"
                         className="btn fw-semibold text-white text-nowrap transition"
@@ -606,10 +596,6 @@ function WebDevelopment() {
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
 
@@ -632,14 +618,14 @@ function WebDevelopment() {
                                     cursor: "pointer",
                                     borderRadius: "15px",
                                     backgroundColor: "#fff",
-                                    boxShadow: "0 2px 6px rgba(0, 0, 0, 0.05)",
+                                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
                                     overflow: "hidden",
                                     transition: "all 0.3s ease",
                                 }}
-                               
+
                             >
                                 {/* Question */}
-                                <div className="faq-question py-3 px-4 d-flex align-items-start fs-5 fw-normal"   data-aos="fade-up">
+                                <div className="faq-question py-3 px-4 d-flex align-items-start fs-5 fw-normal" data-aos="fade-up">
                                     <span className="faq-number me-2">{index + 1}.</span>
                                     <span>{faq.question}</span>
                                 </div>
@@ -648,6 +634,7 @@ function WebDevelopment() {
                                 <div
                                     className={`faq-answer fw-normal ${openQuestion === index ? "show" : "collapse"}`}
                                     style={{
+                                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
                                         backgroundColor: openQuestion === index ? "#D9D9D9" : "transparent",
                                         padding: openQuestion === index ? "12px 20px 16px" : "0 20px",
                                         fontSize: "15px",

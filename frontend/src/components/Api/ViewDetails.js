@@ -1,4 +1,4 @@
-const BLOG_DETAIL_API = "http://31.97.63.245:3001/v1/blogdata";
+const BLOG_DETAIL_API = "https://agarissitsolution.in/api/v1/blogdata";
 
 // Corrected:
 export async function fetchProjectData(id) {
@@ -7,12 +7,14 @@ export async function fetchProjectData(id) {
   try {
     const res = await fetch(`${BLOG_DETAIL_API}/${id}`);
 
-    // console.log("API responded with status:", res.status);
+    // console.log("API responded with status:", res);
 
     if (!res.ok) {
       throw new Error(`Failed to fetch project data. Status: ${res.status}`);
     }
     const data = await res.json();
+    console.log(data.data);
+    
 
     // console.log("Received data from API:", data?.data);
     return data;

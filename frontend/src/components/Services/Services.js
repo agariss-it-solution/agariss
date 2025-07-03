@@ -11,10 +11,8 @@ import digitalpic from "./pages/Images/Frame 117 (3).png";
 import ecomerspic from "./pages/Images/Frame 117 (4).png"
 import desktoppic from "./pages/Images/Frame 117 (5).png"
 import Footer from "../Footer/footer"
-
 import { Link } from "react-router-dom";
-import yourImage from "../Images/Frame 114 (11).png"
-import logo from "../Images/Remove_background_project-removebg-preview 1.png";
+
 
 
 function Services() {
@@ -128,11 +126,11 @@ function Services() {
                   {/* Content */}
                   <div className="row align-items-center border-dark border-2 flex-grow-1 m-0">
                     <div className="col-6 py-lg-5 py-3 px-2">
-                      <h5 className="mb-0 text-center fw-normal fs-6 fs-lg-5">
+                      <h5 className="mb-0 text-center fw-semibold fs-6 fs-lg-3">
                         {service.label}
                       </h5>
                     </div>
-                    <div className="col-6 py-lg-5 py-3 px-2 border-start border-dark border-2">
+                    <div className="col-6 py-lg-5 py-3 px-2 fw-normal fs-6 fs-lg-3 color-name border-start border-dark border-2">
                       <p className="mb-0 text-start small">
                         {service.description}
                       </p>

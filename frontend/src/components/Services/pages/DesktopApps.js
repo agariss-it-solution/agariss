@@ -362,7 +362,7 @@ function DesktopApps() {
               mousewheel={{ releaseOnEdges: true }}
               spaceBetween={20}
               modules={[Navigation, Scrollbar, Mousewheel]}
-                                          style={{ marginLeft: "-11px" }}
+              style={{ marginLeft: "-11px" }}
               className="feature-swiper custom-swiper-height"
               breakpoints={{
                 0: {
@@ -591,72 +591,73 @@ function DesktopApps() {
           </div>
         </div>
         <div className="faq-division fw-semibold py-5 px-lg-4 bg-transparent">
-                                         {/* Heading */}
-                                         <div data-aos="fade-down" className="text-center mb-5">
-                                             <h2 className="offer-heading responsive-heading division-header">
-                                                 Frequently Asked Questions
-                                             </h2>
-                                         </div>
-                     
-                                         {/* FAQ items */}
-                                         <div className="container px-0">
-                                             {faqs.map((faq, index) => (
-                                                 <div
-                                                     key={index}
-                                                     className={`faq-item mb-3 ${openQuestion === index ? "active" : ""}`}
-                                                     onClick={() => toggleQuestion(index)}
-                                                     style={{
-                                                         cursor: "pointer",
-                                                         borderRadius: "15px",
-                                                         backgroundColor: "#fff",
-                                                         boxShadow: "0 2px 6px rgba(0, 0, 0, 0.05)",
-                                                         overflow: "hidden",
-                                                         transition: "all 0.3s ease",
-                                                     }}
-                                                    
-                                                 >
-                                                     {/* Question */}
-                                                     <div className="faq-question py-3 px-4 d-flex align-items-start fs-5 fw-normal" data-aos="fade-up">
-                                                         <span className="faq-number me-2">{index + 1}.</span>
-                                                         <span>{faq.question}</span>
-                                                     </div>
-                     
-                                                     {/* Answer */}
-                                                     <div
-                                                         className={`faq-answer fw-normal ${openQuestion === index ? "show" : "collapse"}`}
-                                                         style={{
-                                                             backgroundColor: openQuestion === index ? "#D9D9D9" : "transparent",
-                                                             padding: openQuestion === index ? "12px 20px 16px" : "0 20px",
-                                                             fontSize: "15px",
-                                                             transition: "all 0.3s ease",
-                                                         }}
-                                                     >
-                                                         {faq.answer}
-                                                     </div>
-                                                 </div>
-                                             ))}
-                                         </div>
-                     
-                                         {/* CTA Button */}
-                                         <div className="faq-cta text-center mt-5" data-aos="fade-up" data-aos-delay={faqs.length * 100}>
-                                             <Link
-                                                 to="/contact"
-                                                 className="btn fw-semibold text-white text-nowrap"
-                                                 style={{
-                                                     backgroundColor: "#B88338",
-                                                     fontSize: "clamp(0.8rem, 2.5vw, 25px)",
-                                                     padding: "10px 30px",
-                                                     borderRadius: "30px",
-                                                     transition: "transform 0.3s ease-in-out",
-                                                 }}
-                                                 onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
-                                                 onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                                             >
-                                                 Got a Query? Let’s Talk
-                                             </Link>
-                                         </div>
-                                     </div>
-       
+          {/* Heading */}
+          <div data-aos="fade-down" className="text-center mb-5">
+            <h2 className="offer-heading responsive-heading division-header">
+              Frequently Asked Questions
+            </h2>
+          </div>
+
+          {/* FAQ items */}
+          <div className="container px-0">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className={`faq-item mb-3 ${openQuestion === index ? "active" : ""}`}
+                onClick={() => toggleQuestion(index)}
+                style={{
+                  cursor: "pointer",
+                  borderRadius: "15px",
+                  backgroundColor: "#fff",
+                 boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
+                  overflow: "hidden",
+                  transition: "all 0.3s ease",
+                }}
+
+              >
+                {/* Question */}
+                <div className="faq-question py-3 px-4 d-flex align-items-start fs-5 fw-normal" data-aos="fade-up">
+                  <span className="faq-number me-2">{index + 1}.</span>
+                  <span>{faq.question}</span>
+                </div>
+
+                {/* Answer */}
+                <div
+                  className={`faq-answer fw-normal ${openQuestion === index ? "show" : "collapse"}`}
+                  style={{
+                    backgroundColor: openQuestion === index ? "#D9D9D9" : "transparent",
+                    padding: openQuestion === index ? "12px 20px 16px" : "0 20px",
+                    fontSize: "15px",
+                     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
+                    transition: "all 0.3s ease",
+                  }}
+                >
+                  {faq.answer}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="faq-cta text-center mt-5" data-aos="fade-up" data-aos-delay={faqs.length * 100}>
+            <Link
+              to="/contact"
+              className="btn fw-semibold text-white text-nowrap"
+              style={{
+                backgroundColor: "#B88338",
+                fontSize: "clamp(0.8rem, 2.5vw, 25px)",
+                padding: "10px 30px",
+                borderRadius: "30px",
+                transition: "transform 0.3s ease-in-out",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+            >
+              Got a Query? Let’s Talk
+            </Link>
+          </div>
+        </div>
+
 
       </div>
       <Footer />

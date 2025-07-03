@@ -1,4 +1,4 @@
-import { useState ,useEffect} from "react";
+import { useState, useEffect } from "react";
 import contecImage from "./Images/front-view-woman-with-copy-space.png";
 
 import "./Contact.css"
@@ -72,8 +72,8 @@ const Contact = () => {
 
 
   useEffect(() => {
-  AOS.init({ duration: 2000, once: true });
-}, []);
+    AOS.init({ duration: 2000, once: true });
+  }, []);
   return (
     <div className="">
 
@@ -118,7 +118,7 @@ const Contact = () => {
               <Card
                 className="p-lg-4  border-0 shadow rounded-4"
                 style={{ backgroundColor: "#ABABAB" }}
-               
+
               >
                 <Row>
                   {/* Left: Form */}
@@ -208,17 +208,26 @@ const Contact = () => {
                   </Col>
 
                   {/* Right: Contact Info */}
-                  <Col lg={5} sm={12 }  data-aos="fade-left">
+                  <Col lg={5} sm={12} data-aos="fade-left">
                     <Card
                       className="h-100 border-0 text-white rounded-4 p-4 info-subtext"
                       style={{ backgroundColor: "#3188f7" }}
-                      
+
                     >
                       <h5 className="fw-medium fs-5 fs-lg-1 contec-info mb-4">Contact Info</h5>
 
                       {/* Location */}
                       <div className="d-flex align-items-start gap-3 mb-4 flex-column flex-sm-row">
-                        <FaMapMarkerAlt className="text-white social-icon-hover fs-1 " style={{ fontSize: "32px" }} />
+
+                        <a
+                          href="https://maps.app.goo.gl/PaGb6AAAjStPPpuaA"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaMapMarkerAlt className="text-white social-icon-hover fs-1 " style={{ fontSize: "32px" }} />
+
+                        </a>
+
                         <div className="text-start">
                           <strong className="fw-semibold fs-5 fs-md-4 fs-lg-3 info">Address</strong>
                           <p className="mb-0 text-white fs-6 fs-md-5 fs-lg-5">
@@ -230,7 +239,14 @@ const Contact = () => {
 
                       {/* Email */}
                       <div className="d-flex align-items-start gap-3 mb-4 flex-column flex-sm-row">
-                        <FaEnvelope className="text-white social-icon-hover mt-1" style={{ fontSize: "32px" }} />
+                        <a
+                          href="https://mail.google.com/mail/?view=cm&fs=1&to=agarissitsolution@gmail.com&su=Hello%20from%20website&body=I%20want%20to%20connect%20with%20you."
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaEnvelope className="text-white social-icon-hover mt-1" style={{ fontSize: "32px" }} />
+                        </a>
+
                         <div className="text-start">
                           <strong className="fw-semibold fs-5 fs-md-4 fs-lg-3 info">Email Us</strong>
                           <p className="mb-0 fs-6 fs-md-5 fs-lg-5">
@@ -243,7 +259,17 @@ const Contact = () => {
 
                       {/* Phone */}
                       <div className="d-flex align-items-start gap-3 flex-column flex-sm-row">
-                        <FaPhone className="text-white social-icon-hover mt-1" style={{ fontSize: "32px" }} />
+                        <a
+                          href="tel:+919925925113"
+                          style={{ textDecoration: "none", color: "inherit" }}
+                          className="d-flex align-items-start gap-3"
+                        >
+
+                          <FaPhone className=" fw-semibold  icon-info social-icon-hover"
+                            style={{ fontSize: "32px" }}
+                          />
+                        </a>
+
                         <div className="text-start">
                           <strong className="fw-semibold fs-5 fs-md-4 fs-lg-3 info">Contact Us</strong>
                           <p className="mb-0 fs-6 fs-md-5 fs-lg-5">
@@ -256,40 +282,40 @@ const Contact = () => {
 
                       {/* Social Icons */}
                       <div className="mt-4">
-                        <strong className="fw-semibold fs-5 fs-md-4 fs-lg-3 info">Follow us on</strong>
+                        <strong className="fw-semibold fs-5 fs-md-4 fs-lg-2 info ">Follow us on</strong>
                         <div className="d-flex gap-3 mt-2">
-                             <a
+                          <a
                             href="https://mail.google.com/mail/?view=cm&fs=1&to=agarissitsolution@gmail.com&su=Hello%20from%20website&body=I%20want%20to%20connect%20with%20you."
                             target="_blank"
                             rel="noopener noreferrer"
-                        >
-                           
-                              <FaInstagram  className="text-white social-icon-hover" style={{ fontSize: "40px" }}
-                            
-                               />
-                               </a>
-                                 <a
+                          >
+
+                            <FaInstagram className="text-white social-icon-hover" style={{ fontSize: "40px" }}
+
+                            />
+                          </a>
+                          <a
                             href="https://www.facebook.com/profile.php?id=61577234442740"
                             target="_blank"
                             rel="noopener noreferrer"
-                        >
-                           
-                              <FaFacebook  className="text-white social-icon-hover" style={{ fontSize: "40px" }}
-                            
-                               />
-                               </a>
-                                 <a
+                          >
+
+                            <FaFacebook className="text-white social-icon-hover" style={{ fontSize: "40px" }}
+
+                            />
+                          </a>
+                          <a
                             href="https://api.whatsapp.com/send?phone=9925925113"
                             target="_blank"
                             rel="noopener noreferrer"
-                        >
-                           
-                              <FaWhatsapp  className="text-white social-icon-hover" style={{ fontSize: "40px" }}
-                            
-                               />
-                               </a>
-                        
-                         
+                          >
+
+                            <FaWhatsapp className="text-white social-icon-hover" style={{ fontSize: "40px" }}
+
+                            />
+                          </a>
+
+
                         </div>
                       </div>
                     </Card>

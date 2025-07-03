@@ -356,7 +356,7 @@ function UiUxDesign() {
             <img src={imgLeft} alt="Service Visual" className="img-fluid w-100" />
           </div>
           <div className=" col-lg-6 col-12 " data-aos="fade-left">
-         <Swiper
+           <Swiper
                             direction={direction}
                             navigation={true}
                             mousewheel={{ releaseOnEdges: true }}
@@ -608,7 +608,7 @@ function UiUxDesign() {
                                           cursor: "pointer",
                                           borderRadius: "15px",
                                           backgroundColor: "#fff",
-                                          boxShadow: "0 2px 6px rgba(0, 0, 0, 0.05)",
+                                          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
                                           overflow: "hidden",
                                           transition: "all 0.3s ease",
                                       }}
@@ -625,6 +625,7 @@ function UiUxDesign() {
                                           className={`faq-answer fw-normal ${openQuestion === index ? "show" : "collapse"}`}
                                           style={{
                                               backgroundColor: openQuestion === index ? "#D9D9D9" : "transparent",
+                                               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)" ,
                                               padding: openQuestion === index ? "12px 20px 16px" : "0 20px",
                                               fontSize: "15px",
                                               transition: "all 0.3s ease",
