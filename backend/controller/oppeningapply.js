@@ -6,7 +6,7 @@ const applyToOpening = async (req, res) => {
   try {
     const { fullName, email, contact_number, position, experience } = req.body;
     const resume = req.file?.filename;
-    const resumeUrl = `https://agarissitsolution.in/api/uploads/${resume}`;
+    const resumeUrl = `https://agarissitsolution.in/uploads/${resume}`;
 
     // Field validation
     if (
