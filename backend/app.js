@@ -9,12 +9,10 @@ dotenv.config();
 const app = express();
 
 // Middlewares
-app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ extended: true, limit: '50mb' }));
-app.use(cors({
-  origin: 'https://agarissitsolution.in',
-  methods: ['GET', 'POST', 'PUT', 'DELETE']
-}));
+app.use(cors());
+app.use(helmet());
+app.use(express.json());
+
 
 
 
