@@ -298,7 +298,6 @@ const Home = () => {
     const handleRedirect = (link) => {
         navigate(link);
     };
-console.log("hi");
     return (
         <div className="grid-container">
             <div className=" bg-color py-5">
