@@ -1,4 +1,4 @@
-const BLOG_DETAIL_API = "http://31.97.63.245:3001/v1/blogdata";
+const BLOG_DETAIL_API = "https://agarissitsolution.in/api/v1/blogdata";
 
 // Corrected:
 export async function fetchProjectData(id) {
