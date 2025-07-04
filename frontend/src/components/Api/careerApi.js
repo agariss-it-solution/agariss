@@ -1,5 +1,5 @@
-const API_URL = "https://agarissitsolution.in/api/v1/openingdata"
-const FORM_API ="https://agarissitsolution.in/api/v1/apply"
+const API_URL = "http://localhost:3001/v1/openingdata"
+const FORM_API ="http://localhost:3001/v1/apply"
 export const fetchJobs = async () => {
   try {
     const response = await fetch(API_URL);
