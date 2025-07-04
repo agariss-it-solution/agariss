@@ -1,6 +1,6 @@
 // src/api/contactApi.js
 
-const API_URL = "https://agarissitsolution.in/api/v1/contact"; // ✅ Replace with your actual backend endpoint
+const API_URL = "http://localhost:3001/v1/contact"; // ✅ Replace with your actual backend endpoint
 
 export const submitContactForm = async (formData) => {
   try {
