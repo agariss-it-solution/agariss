@@ -16,7 +16,7 @@ const createBlog = async (req, res) => {
       });
     }
 
-    const imageUrl = `https://agarissitsolution.in/api/uploads/${req.file.filename}`;
+    const imageUrl = `https://agarissitsolution.in/uploads/${req.file.filename}`;
 
     const blog = await blogSchema.create({
       blog_images: imageUrl,
@@ -46,7 +46,7 @@ const updateBlog = async (req, res) => {
   try {
     const { blog_title, date, blog_name } = req.body;
     const blog_image = req.file?.filename;
-    const imageUrl = `https://agarissitsolution.in/api/uploads/${blog_image}`;
+    const imageUrl = `https://agarissitsolution.in/uploads/${blog_image}`;
     const updatedBlog = await blogSchema.findByIdAndUpdate(
       req.params.id,
       {
@@ -122,7 +122,7 @@ const createBlogDetails = async (req, res) => {
     const blogImage = req.files?.blog_image?.[0]?.filename || "";
     const videoFile = req.files?.video_file?.[0]?.filename || "";
 
-    const baseUrl = "https://agarissitsolution.in/api/uploads/";
+    const baseUrl = "https://agarissitsolution.in/uploads/";
 
     // ✅ Step 2: Create blog details using existing blogId
     const blogDetail = await blogModel.create({
@@ -179,7 +179,7 @@ const updateBlogDetails = async (req, res) => {
     const blogImage = req.files?.blog_image?.[0]?.filename;
     const videoFile = req.files?.video_file?.[0]?.filename;
 
-    const baseUrl = "https://agarissitsolution.in/api/uploads/";
+    const baseUrl = "https://agarissitsolution.in/uploads/";
 
     // ✅ Update only the provided fields
     if (bannerImage) blogDetail.banner_images = baseUrl + bannerImage;
